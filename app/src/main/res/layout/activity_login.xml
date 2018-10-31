@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    >
+    <ImageView
+        android:id="@+id/img_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff00"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Đặt ngón tay lên cảm biến "
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/img_touchid"
+        android:layout_width="157dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:background="@mipmap/ic_touchid" />
+
+    <TextView
+        android:id="@+id/tv_xacthuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="237dp"
+        android:text="xác thực vân tay"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="43dp"
+        android:text="Đăng Nhập bằng tài khoản và mật khẩu >"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dp" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThitLonSachActivity">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar2"
+        android:background="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/white">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/ql_tls"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="THỊ TRƯỜNG" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/ql_stk"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="BỆNH VÀ CÁCH PHÒNG" />
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_danhsach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/table_layout"
+        app:layout_anchor="@+id/table_layout"
+        app:layout_anchorGravity="top|center"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
