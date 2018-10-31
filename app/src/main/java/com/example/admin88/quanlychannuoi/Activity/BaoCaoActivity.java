@@ -16,7 +16,7 @@ public class BaoCaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bao_cao);
         ryc_baocao = findViewById(R.id.recyclerview_baocao);
-        fab_baocao = findViewById(R.id.recyclerview_baocao);
+        fab_baocao = findViewById(R.id.fab_baocao);
         ryc_baocao.setLayoutManager(new LinearLayoutManager(BaoCaoActivity.this));
     }
 }
