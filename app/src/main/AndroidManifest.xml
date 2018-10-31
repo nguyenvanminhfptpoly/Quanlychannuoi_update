@@ -30,14 +30,14 @@
         <activity android:name=".ManHinhChinhActivity" />
         <activity android:name=".SigninActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".Activity.CaTheActivity" />
-        <activity android:name=".Activity.DanActivity" />
-        <activity android:name=".Activity.HoaDonActivity" />
-        <activity android:name=".Activity.BaoCaoActivity" />
-        <activity android:name=".Activity.ThitLonSachActivity" />
-        <activity android:name=".Activity.NguoiDungActivity" />
-        <activity android:name=".Activity.ThucAnActivity" />
-        <activity android:name=".ActivityChiTiet.ChiTietbenhActivity"></activity>
+        <activity android:name=".activity.CaTheActivity" />
+        <activity android:name=".activity.DanActivity" />
+        <activity android:name=".activity.HoaDonActivity" />
+        <activity android:name=".activity.BaoCaoActivity" />
+        <activity android:name=".activity.ThitLonSachActivity" />
+        <activity android:name=".activity.NguoiDungActivity" />
+        <activity android:name=".activity.ThucAnActivity" />
+        <activity android:name=".activitychitiet.ChiTietbenhActivity"></activity>
     </application>
 
 </manifest>

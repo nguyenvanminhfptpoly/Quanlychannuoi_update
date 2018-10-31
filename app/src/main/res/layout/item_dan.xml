@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_dan"
+            android:layout_width="98dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/danheo" />
+
+        <TextView
+            android:id="@+id/img_sohieudan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/img_dan"
+            android:layout_marginStart="107dp"
+            android:text="SỐ HIỆU ĐÀN"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tinhtrangdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/img_sohieudan"
+            android:layout_centerVertical="true"
+            android:text="TÌNH TRẠNG" />
+
+        <TextView
+            android:id="@+id/soluong_dan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_dan"
+            android:layout_alignStart="@+id/img_sohieudan"
+            android:text="soluong" />
+
+        <TextView
+            android:id="@+id/luongcam_dan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_dan"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:text="luong"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/luongcam_dan"
+            android:layout_alignTop="@+id/img_dan"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

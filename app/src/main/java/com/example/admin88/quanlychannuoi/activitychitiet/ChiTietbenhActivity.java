@@ -1,4 +1,4 @@
-package com.example.admin88.quanlychannuoi.ActivityChiTiet;
+package com.example.admin88.quanlychannuoi.activitychitiet;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

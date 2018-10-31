@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÊM ĐÀN MỚI"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_sohieudan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Số Hiệu Đàn vd:DA113"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ed_soluongdan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Số Lượng "
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/ed_tinhtrang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tình Trạng Của Đàn"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_themdan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Đàn Mới" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.admin88.quanlychannuoi.Activity.BaoCaoActivity;
-import com.example.admin88.quanlychannuoi.Activity.CaTheActivity;
-import com.example.admin88.quanlychannuoi.Activity.DanActivity;
-import com.example.admin88.quanlychannuoi.Activity.HoaDonActivity;
-import com.example.admin88.quanlychannuoi.Activity.NguoiDungActivity;
-import com.example.admin88.quanlychannuoi.Activity.ThitLonSachActivity;
+import com.example.admin88.quanlychannuoi.activity.BaoCaoActivity;
+import com.example.admin88.quanlychannuoi.activity.CaTheActivity;
+import com.example.admin88.quanlychannuoi.activity.DanActivity;
+import com.example.admin88.quanlychannuoi.activity.HoaDonActivity;
+import com.example.admin88.quanlychannuoi.activity.NguoiDungActivity;
+import com.example.admin88.quanlychannuoi.activity.ThitLonSachActivity;
 
 public class ManHinhChinhActivity extends AppCompatActivity {
 

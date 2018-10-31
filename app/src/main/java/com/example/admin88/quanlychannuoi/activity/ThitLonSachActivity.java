@@ -1,11 +1,11 @@
-package com.example.admin88.quanlychannuoi.Activity;
+package com.example.admin88.quanlychannuoi.activity;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.admin88.quanlychannuoi.Adapter_thilon.Adapter_thilonsach_tablelayout;
+import com.example.admin88.quanlychannuoi.adapter_thilon.Adapter_thilonsach_tablelayout;
 import com.example.admin88.quanlychannuoi.R;
 
 public class ThitLonSachActivity extends AppCompatActivity {

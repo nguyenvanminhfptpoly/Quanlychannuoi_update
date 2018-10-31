@@ -1,4 +1,4 @@
-package com.example.admin88.quanlychannuoi.SQLite;
+package com.example.admin88.quanlychannuoi.sqlite;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -25,8 +25,8 @@ public class DBmanager extends SQLiteOpenHelper {
                 "TINHTRANG TEXT)";
         String cathe = "CREATE TABLE CA_THE (" +
                 "SOHIEUCATHE TEXT PRIMARY KEY," +
-                "SOHIEUDAN TEXT" +
-                "CANNANG DOUBLE," +
+                "SOHIEUDAN TEXT," +
+                "CANNANG DOUBLE ," +
                 "GIONG TEXT," +
                 "TINHTRANGCATHE TEXT," +
                 "TENBENH TEXT," +
@@ -39,11 +39,32 @@ public class DBmanager extends SQLiteOpenHelper {
         String hoadon = "CREATE TABLE HOADON (" +
                 "MAHOADON TEXT PRIMARY KEY," +
                 "SOHIEUDAN TEXT," +
+                "SOLUONG INTEGER," +
+                "GIATHITLON DOUBLE)";
+        String baocao = "CREATE TABLE BAOCAO (" +
+                "THOIGIAN TEXT PRIMARY KEY," +
+                "CHIPHITHUCAN TEXT" +
                 ")";
+        String user = "CREATE TABLE NGUOIDUNG (" +
+                "NAME TEXT PRIMARY KEY," +
+                "SDT INTEGER," +
+                "DIACHI TEXT)";
+        db.execSQL(dan);
+        db.execSQL(cathe);
+        db.execSQL(thucan);
+        db.execSQL(hoadon);
+        db.execSQL(baocao);
+        db.execSQL(user);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_BAOCAO);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_CATHE);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_DAN);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_HOADON);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_THUCAN);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_USER);
+        onCreate(db);
     }
 }

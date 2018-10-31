@@ -1,11 +1,11 @@
-package com.example.admin88.quanlychannuoi.Adapter_thilon;
+package com.example.admin88.quanlychannuoi.adapter_thilon;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.admin88.quanlychannuoi.Fragment.BenhVaPhongTranhFragment;
-import com.example.admin88.quanlychannuoi.Fragment.ThiTruongFragment;
+import com.example.admin88.quanlychannuoi.fragment.BenhVaPhongTranhFragment;
+import com.example.admin88.quanlychannuoi.fragment.ThiTruongFragment;
 
 
 public class Adapter_thilonsach_tablelayout extends FragmentStatePagerAdapter {
