@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+    <TextView
+        android:id="@+id/tv_sohieudan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/img"
+        android:layout_marginTop="11dp"
+        android:text="số hiệu đàn"
+        android:layout_alignLeft="@+id/img" />
+
+    <TextView
+        android:id="@+id/tv_sohieucathe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img"
+        android:layout_alignStart="@+id/tv_sohieudan"
+        android:layout_marginBottom="-53dp"
+        android:text="số hiệu cá thể"
+        android:textAllCaps="true"
+        android:padding="2dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/tv_sohieudan" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/cathe"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/tv_sohieudan"
+            android:layout_below="@+id/tv_xuatchuong"
+            android:layout_marginTop="-47dp"
+            android:src="@drawable/cathe" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/tv_sohieudan"
+            android:layout_below="@+id/tv_tenbenh"
+            android:layout_marginTop="-75dp"
+            android:src="@drawable/cathe" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/tv_tenbenh"
+            android:layout_alignStart="@+id/tv_sohieudan"
+            android:src="@drawable/cathe" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/tv_sohieudan"
+            android:layout_below="@+id/img"
+            android:src="@drawable/cathe" />
+
+        <TextView
+        android:id="@+id/tv_tinhtrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginStart="54dp"
+        android:text="tình trạng bệnh"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="54dp" />
+
+        <TextView
+            android:id="@+id/tv_tenbenh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_tinhtrang"
+            android:layout_marginBottom="75dp"
+            android:text="tên bệnh" />
+
+        <TextView
+            android:id="@+id/tv_xuatchuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_tinhtrang"
+            android:layout_marginBottom="47dp"
+            android:text="khả năng xuất chuồng" />
+
+        <TextView
+            android:id="@+id/tv_cannang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_toEndOf="@+id/tv_sohieudan"
+            android:text="cân nặng" />
+
+        <ImageView
+            android:id="@+id/img_delete_cathe"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/ic_delete_forever_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_giong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_tinhtrang"
+            android:layout_marginBottom="20dp"
+            android:text="TextView" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -37,4 +37,9 @@ public class Dan {
     public void setmTinhTrang(String mTinhTrang) {
         this.mTinhTrang = mTinhTrang;
     }
+
+    @Override
+    public String toString() {
+        return "Đàn : "+getmSohieudan()+ " có "+getmSoluongdan()+ " cá thể";
+    }
 }

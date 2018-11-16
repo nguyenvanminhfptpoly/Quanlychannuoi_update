@@ -43,11 +43,12 @@ public class DBmanager extends SQLiteOpenHelper {
                 "GIATHITLON DOUBLE)";
         String baocao = "CREATE TABLE BAOCAO (" +
                 "THOIGIAN TEXT PRIMARY KEY," +
-                "CHIPHITHUCAN TEXT" +
+                "DOANHTHU DOUBLE," +
+                "CHIPHITHUCAN DOUBLE" +
                 ")";
         String user = "CREATE TABLE NGUOIDUNG (" +
                 "NAME TEXT PRIMARY KEY," +
-                "SDT INTEGER," +
+                "SDT TEXT," +
                 "DIACHI TEXT)";
         db.execSQL(dan);
         db.execSQL(cathe);

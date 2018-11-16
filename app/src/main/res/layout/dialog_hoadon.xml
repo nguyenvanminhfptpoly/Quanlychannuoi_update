@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Thêm Hóa Đơn"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_mahoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mã Hóa Đơn vd: HA113"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/ed_sohieudan_hoadon"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Số Hiệu Đàn vd: DA113"
+         />
+
+    <EditText
+        android:id="@+id/ed_soluong_hoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Số Lượng Con Bán"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/ed_giathitlon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Giá Thịt Lợn Hiện Nay"
+        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_huyhoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_themhoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="THÊM Hóa Đơn"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>

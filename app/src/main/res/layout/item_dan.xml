@@ -1,69 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="150dp"
 
+    >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/img_dan"
-            android:layout_width="98dp"
-            android:layout_height="68dp"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:background="@mipmap/danheo" />
+        android:layout_height="150dp">
 
         <TextView
             android:id="@+id/img_sohieudan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/img_dan"
-            android:layout_marginStart="107dp"
-            android:text="SỐ HIỆU ĐÀN"
-            android:textAllCaps="true"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="18dp"
+            android:text="Số hiệu đàn" />
 
         <TextView
             android:id="@+id/tinhtrangdan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_dan"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="66dp"
+            android:text="tình trạng" />
+
+        <ImageView
+            android:id="@+id/img_d"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/img_sohieudan"
-            android:layout_centerVertical="true"
-            android:text="TÌNH TRẠNG" />
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/danheo" />
+
+        <ImageView
+            android:id="@+id/img_dan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/img_sohieudan"
+            android:layout_below="@+id/tv_soluongdan"
+            android:background="@drawable/danheo" />
 
         <TextView
-            android:id="@+id/soluong_dan"
+            android:id="@+id/tv_soluongdan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/img_dan"
+            android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/img_sohieudan"
-            android:text="soluong" />
+            android:layout_marginTop="45dp"
+            android:text="số lượng"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tinhtrangdan"
+            android:layout_alignTop="@+id/img_d"
+            android:text="Lượng thức ăn cần là" />
 
         <TextView
             android:id="@+id/luongcam_dan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/img_dan"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="28dp"
-            android:text="luong"
+            android:layout_alignTop="@+id/img_d"
+            android:layout_marginEnd="44dp"
+            android:text="TextView"
+            android:textAllCaps="true"
             android:textColor="@color/colorAccent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/img_deletedan"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="26dp"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/luongcam_dan"
-            android:layout_alignTop="@+id/img_dan"
-            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+            android:layout_alignTop="@+id/tv_soluongdan"
+            android:layout_toEndOf="@+id/tv_soluongdan"
+            android:text="cá thể" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/luongcam_dan"
+            android:text="KG" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

@@ -57,11 +57,11 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
         xacthuc.setText(s);
 
         if (b==false){
-            xacthuc.setTextColor(ContextCompat.getColor(context,R.color.white));
+            xacthuc.setTextColor(ContextCompat.getColor(context,R.color.colorPrimary));
         }else {
-            xacthuc.setTextColor(ContextCompat.getColor(context,R.color.white));
-            img_touch.setImageResource(R.mipmap.ic_done);
-            img_backdroud.setBackgroundColor(R.color.colorAccent);
+            xacthuc.setTextColor(ContextCompat.getColor(context,R.color.colorPrimary));
+            img_touch.setImageResource(R.mipmap.ic_donetouchid);
+
             Intent intent = new Intent(context, ManHinhChinhActivity.class);
             context.startActivity(intent);
         }

@@ -21,7 +21,7 @@ public class DanDAO  {
     public long insert(Dan dan){
         ContentValues values = new ContentValues();
         values.put("SOHIEUDAN",dan.getmSohieudan());
-        values.put("SOLUONG",dan.getmSohieudan());
+        values.put("SOLUONG",dan.getmSoluongdan());
         values.put("TINHTRANG",dan.getmTinhTrang());
         return db.insert("DAN",null,values);
     }
@@ -39,5 +39,18 @@ public class DanDAO  {
     }
     public int delete(Dan dan){
         return db.delete("DAN","SOHIEUDAN=?",new String[]{dan.getmSohieudan()});
+    }
+
+    public double getLuongCamTieuThu(){
+        double diemtb = 0;
+        String sql2 = " SELECT sum(SOLUONG*10)/count(sohieudan) FROM DAN    ";
+        Cursor cursor2 = db.rawQuery(sql2,null);
+        cursor2. moveToFirst();
+        while (cursor2.isAfterLast()==false){
+            diemtb= cursor2.getDouble(0);
+            cursor2.moveToNext();
+        }
+        cursor2.close();
+        return  diemtb;
     }
 }

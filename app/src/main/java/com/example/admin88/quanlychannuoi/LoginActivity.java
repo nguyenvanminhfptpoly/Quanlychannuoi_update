@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        tv_title = findViewById(R.id.tv_title);
+
         img_touchid = findViewById(R.id.img_touchid);
         tv_xacthuc = findViewById(R.id.tv_xacthuc);
         tv_login = findViewById(R.id.tv_login);

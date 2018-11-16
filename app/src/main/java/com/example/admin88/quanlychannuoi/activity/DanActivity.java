@@ -15,8 +15,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.admin88.quanlychannuoi.R;
+import com.example.admin88.quanlychannuoi.adapter.Adapter_Cathe;
 import com.example.admin88.quanlychannuoi.adapter.Adapter_dan;
+import com.example.admin88.quanlychannuoi.interface1.OnitemDeleteDan;
+import com.example.admin88.quanlychannuoi.model.Cathe;
 import com.example.admin88.quanlychannuoi.model.Dan;
+import com.example.admin88.quanlychannuoi.sqlite.CatheDAO;
 import com.example.admin88.quanlychannuoi.sqlite.DanDAO;
 
 import java.util.List;
@@ -28,6 +32,8 @@ public class DanActivity extends AppCompatActivity {
     private Dan dan;
     private Adapter_dan adapter_dan;
     private DanDAO danDAO;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +46,12 @@ public class DanActivity extends AppCompatActivity {
 
         //themvaoryc
         dans = danDAO.getAlldata();
-        adapter_dan = new Adapter_dan(dans, DanActivity.this);
+        adapter_dan = new Adapter_dan(dans, DanActivity.this, new OnitemDeleteDan() {
+            @Override
+            public void onItemdelete(int position) {
+                removeitem(position);
+            }
+        });
         recyclerview_dan.setAdapter(adapter_dan);
 
         //batsukien
@@ -53,10 +64,16 @@ public class DanActivity extends AppCompatActivity {
                 final EditText ed_soluong = v2.findViewById(R.id.ed_soluongdan);
                 final EditText ed_tinhtrang = v2.findViewById(R.id.ed_tinhtrang);
                 Button btn_them = v2.findViewById(R.id.btn_themdan);
+                Button huy = v2.findViewById(R.id.btnhuydan);
                 builder.setView(v2);
                 final Dialog dialog = builder.create();
                 dialog.show();
-
+                huy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
                 btn_them.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -67,7 +84,7 @@ public class DanActivity extends AppCompatActivity {
                              Toast.makeText(DanActivity.this, "Vui Lòng Nhập đủ Dữ Liệu", Toast.LENGTH_SHORT).show();
                          }else {
                              danDAO.insert(new Dan(sohieudan,soluong,tinhtrang));
-                             Toast.makeText(DanActivity.this, "Them Thành công", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(DanActivity.this, "Thêm Thành công", Toast.LENGTH_SHORT).show();
                                 updatedata();
                                 dialog.dismiss();
                          }
@@ -97,4 +114,12 @@ public class DanActivity extends AppCompatActivity {
         }
         return 0;
     }
+    public void removeitem(int position){
+        dan = new Dan();
+        dan = dans.get(position);
+        dans.remove(position);
+        danDAO.delete(dan);
+        updatedata();
+    }
+
 }

@@ -33,6 +33,7 @@ public class SigninActivity extends AppCompatActivity {
                     Toast.makeText(SigninActivity.this, "Nhập đủ dữ liệu", Toast.LENGTH_SHORT).show();
                 }else {
                 Intent intent = new Intent(SigninActivity.this, ManHinhChinhActivity.class);
+                    Toast.makeText(SigninActivity.this, "Đăng kí thành công", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 }
             }

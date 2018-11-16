@@ -1,9 +1,12 @@
 package com.example.admin88.quanlychannuoi;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.admin88.quanlychannuoi.activity.BaoCaoActivity;
@@ -14,11 +17,14 @@ import com.example.admin88.quanlychannuoi.activity.NguoiDungActivity;
 import com.example.admin88.quanlychannuoi.activity.ThitLonSachActivity;
 
 public class ManHinhChinhActivity extends AppCompatActivity {
-
+    private RelativeLayout red;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_man_hinh_chinh);
+        red = findViewById(R.id.rela2);
+        red.setNestedScrollingEnabled(false);
     }
 
     public void avatar_cathe(View view) {

@@ -10,28 +10,7 @@
         android:id="@+id/img_backgroud"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ff00"/>
-
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
-        android:text="Đặt ngón tay lên cảm biến "
-        android:textAllCaps="true"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-    <ImageView
-        android:id="@+id/img_touchid"
-        android:layout_width="157dp"
-        android:layout_height="147dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp"
-        android:background="@mipmap/ic_touchid" />
+        android:background="@color/white"/>
 
     <TextView
         android:id="@+id/tv_xacthuc"
@@ -39,10 +18,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="237dp"
+        android:layout_marginTop="222dp"
         android:text="xác thực vân tay"
         android:textAllCaps="true"
-        android:textColor="#fff"
+        android:textColor="@color/colorAccent"
         android:textSize="12sp"
         android:textStyle="bold" />
 
@@ -52,10 +31,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginBottom="28dp"
         android:layout_marginEnd="43dp"
-        android:text="Đăng Nhập bằng tài khoản và mật khẩu >"
-        android:textColor="#fff"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="43dp" />
+        android:layout_marginRight="43dp"
+        android:text="Sử dụng tài khoản =>"
+        android:textColor="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/img_touchid"
+        android:layout_width="161dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        app:srcCompat="@mipmap/ic_touchid" />
 </RelativeLayout>

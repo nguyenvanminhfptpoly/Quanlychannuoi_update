@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/tv_mahoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="18dp"
+            android:text="Số hiệu đàn" />
+
+        <TextView
+            android:id="@+id/tv_tendan_hoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_hoadon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="132dp"
+            android:text="tình trạng" />
+
+        <ImageView
+            android:id="@+id/img_d"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_mahoadon"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/hoadon" />
+
+        <ImageView
+            android:id="@+id/img_hoadon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/tv_mahoadon"
+            android:layout_below="@+id/tv_soluong_hoadon"
+            android:background="@drawable/hoadon" />
+
+        <TextView
+            android:id="@+id/tv_soluong_hoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_mahoadon"
+            android:layout_marginTop="45dp"
+            android:text="số lượng"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_giathitlon_hoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_d"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="143dp"
+            android:text="Thành tiền" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tv_tendan_hoadon"
+            android:layout_marginEnd="17dp"
+            android:text="Thành tiền"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/img_delete_hoadon"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="28dp"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/img_hoadon"
+            android:layout_toEndOf="@+id/tv_soluong_hoadon"
+            android:text="cá thể" />
+
+        <TextView
+            android:id="@+id/tv_thanhtien_hoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_d"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="-34dp"
+            android:layout_toStartOf="@+id/img_delete_hoadon"
+            android:text="VNĐ"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tv_tendan_hoadon"
+            android:layout_marginStart="58dp"
+            android:text="Tên đàn" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignTop="@+id/img_d"
+            android:text="Giá thịt lợn" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
