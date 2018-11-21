@@ -16,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.MainActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.view.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,13 +28,13 @@
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.LoginActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.view.LoginActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.ManHinhChinhActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.view.ManHinhChinhActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.SigninActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.view.SigninActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.SignUpActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.view.SignUpActivity"
             android:screenOrientation="portrait"/>
         <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.CaTheActivity"
             android:screenOrientation="portrait"/>

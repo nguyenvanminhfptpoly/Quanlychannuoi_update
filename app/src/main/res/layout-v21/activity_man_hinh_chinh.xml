@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:scrollX="@dimen/activity_horizontal_margin"
     android:scrollbarStyle="insideOverlay"
-    tools:context=".ManHinhChinhActivity">
+    tools:context=".view.ManHinhChinhActivity">
 
     <RelativeLayout
         android:id="@+id/rela2"

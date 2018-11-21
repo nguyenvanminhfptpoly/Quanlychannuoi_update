@@ -1,4 +1,4 @@
-package com.minhnv.admin88.quanlychannuoi;
+package com.minhnv.admin88.quanlychannuoi.view;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -11,6 +11,8 @@ import android.os.CancellationSignal;
 import android.support.v4.content.ContextCompat;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.minhnv.admin88.quanlychannuoi.R;
 
 
 @TargetApi(Build.VERSION_CODES.M)

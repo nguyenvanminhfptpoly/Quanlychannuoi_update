@@ -1,4 +1,4 @@
-package com.minhnv.admin88.quanlychannuoi;
+package com.minhnv.admin88.quanlychannuoi.view;
 
 import android.content.Intent;
 import android.os.Build;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.minhnv.admin88.quanlychannuoi.R;
 import com.minhnv.admin88.quanlychannuoi.activity.BaoCaoActivity;
 import com.minhnv.admin88.quanlychannuoi.activity.CaTheActivity;
 import com.minhnv.admin88.quanlychannuoi.activity.DanActivity;

@@ -1,4 +1,4 @@
-package com.minhnv.admin88.quanlychannuoi;
+package com.minhnv.admin88.quanlychannuoi.view;
 
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.minhnv.admin88.quanlychannuoi.R;
 
 public class SignUpActivity extends AppCompatActivity {
     private Toolbar toolbar;

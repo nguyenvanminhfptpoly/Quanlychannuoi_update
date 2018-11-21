@@ -1,4 +1,4 @@
-package com.minhnv.admin88.quanlychannuoi;
+package com.minhnv.admin88.quanlychannuoi.view;
 
 import android.Manifest;
 import android.app.KeyguardManager;
@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.minhnv.admin88.quanlychannuoi.R;
 
 public class LoginActivity extends AppCompatActivity {
     private TextView tv_title, tv_xacthuc, tv_login;
@@ -49,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             }else {
                 tv_xacthuc.setText("Sử dụng cảm biến trên máy để truy cập");
 
-                FingerprintHandler  fingerprintHandler = new FingerprintHandler(this);
+                FingerprintHandler fingerprintHandler = new FingerprintHandler(this);
                 fingerprintHandler.startAuth(fingerprintManager,null);
             }
         }
