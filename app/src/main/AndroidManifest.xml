@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.admin88.quanlychannuoi">
+    package="com.minhnv.admin88.quanlychannuoi">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,20 +26,34 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ManHinhChinhActivity" />
-        <activity android:name=".SigninActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".activity.CaTheActivity" />
-        <activity android:name=".activity.DanActivity" />
-        <activity android:name=".activity.HoaDonActivity" />
-        <activity android:name=".activity.BaoCaoActivity" />
-        <activity android:name=".activity.ThitLonSachActivity" />
-        <activity android:name=".activity.NguoiDungActivity" />
-        <activity android:name=".activity.ThucAnActivity" />
-        <activity android:name=".activitychitiet.ChiTietbenhActivity" />
-        <activity android:name=".activitychitiet.ChitietDanActivity"></activity>
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.ManHinhChinhActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.SigninActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.CaTheActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.DanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.HoaDonActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.BaoCaoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.ThitLonSachActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.NguoiDungActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.ThucAnActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.base.ChiTietbenhActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.base.ChitietDanActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
