@@ -188,7 +188,7 @@
                     android:layout_height="133dp"
                     android:onClick="avatar_baocao"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/baocaot" />
+                    android:src="@drawable/baocaot" />
 
                 <TextView
                     android:id="@+id/tv_baocao"
