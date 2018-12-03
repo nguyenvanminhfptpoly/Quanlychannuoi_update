@@ -39,7 +39,7 @@
                     android:layout_height="133dp"
                     android:onClick="avatar_cathe"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/cathelon" />
+                    app:srcCompat="@drawable/cathelon" />
 
                 <TextView
                     android:id="@+id/tv_cathe"
@@ -90,7 +90,7 @@
                     android:layout_height="133dp"
                     android:onClick="avatar_dan"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/danlon" />
+                    app:srcCompat="@drawable/danlon" />
 
                 <TextView
                     android:id="@+id/tv_dan"
@@ -140,7 +140,7 @@
                     android:layout_height="133dp"
                     android:onClick="avatar_hoadon"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/hoadonthanhtoan" />
+                    app:srcCompat="@drawable/hoadonthanhtoan" />
 
                 <TextView
                     android:id="@+id/tv_hoadon"
@@ -237,7 +237,7 @@
                     android:layout_height="133dp"
                     android:onClick="avatar_thilon"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/thitruongg" />
+                    app:srcCompat="@drawable/thitruongg" />
 
                 <TextView
                     android:id="@+id/tv_thitruong"
@@ -285,7 +285,7 @@
                     android:layout_height="133dp"
                     android:onClick="avatar_user"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/user" />
+                    app:srcCompat="@drawable/user" />
 
                 <TextView
                     android:id="@+id/tv_user"
